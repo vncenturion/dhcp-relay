@@ -1,6 +1,6 @@
 # DHCP E DHCP-RELAY
 
-    1. INTRODUÇÃO 
+## INTRODUÇÃO 
     
         Atividade da disciplina de projeto de redes de computadores do Curso Superior de Tecnologia em Rede de Computadores do IFPB.
 
