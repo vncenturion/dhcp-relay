@@ -50,7 +50,9 @@
    7. Network adapters
 
         VMnet11 (ip estático): 192.168.0.1
+
         VMnet12 (ip estático): 172.16.0.1
+        
         VMnet8 (nat) - opcional: escopo automático do VWware Workstation
 
 ## CONFIGURAÇÃO DO DHPC
