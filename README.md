@@ -11,7 +11,7 @@
         O ISC DHCP é um conjunto de software que implementa todos os aspectos da suíte de protocolos DHCP (Dynamic Host Configuration Protocol).
 
    2. DHCP-RELAY
-   
+
         DESCRIÇÃO
 
         O Agente de DHCP-RELAY da Internet Systems Consortium, dhcrelay, fornece um meio de retransmitir solicitações DHCP e BOOTP de uma sub-rede para a qual nenhum servidor DHCP está diretamente conectado para um ou mais servidores DHCP em outras sub-redes. Ele oferece suporte aos protocolos DHCPv4/BOOTP e DHCPv6.
@@ -35,11 +35,15 @@
 
 ## CENÁRIO PROPOSTO
 
-    Um servidor DHCP conectado a um roteador que conecta duas sub-redes. A primeira sub-rede deverá conter um cliente Linux e o servidor DHCP. A segunda sub-rede conterá apenas um cliente Windows 10.
+   1. TOPOLOGIA
 
-    O escopo para a primeira sub-rede terá parâmetros na rede 192.168.0.0/24 e o escopo da segunda sub-rede terá parâmetros na rede 172.16.0.0/16.
+        Um servidor DHCP conectado a um roteador que conecta duas sub-redes. A primeira sub-rede deverá conter um cliente Linux e o servidor DHCP. A segunda sub-rede conterá apenas um cliente Windows 10.
 
-    Os parâmetros de cada escopo devem conter faixa de endereços para empréstimos e endereço da interface de rede do roteador padrão da sub-rede.
+   2. ESCOPO DHCP
+
+        O escopo para a primeira sub-rede terá parâmetros na rede 192.168.0.0/24 e o escopo da segunda sub-rede terá parâmetros na rede 172.16.0.0/16.
+
+        Os parâmetros de cada escopo devem conter faixa de endereços para empréstimos e endereço da interface de rede do roteador padrão da sub-rede.
 
 ## CONFIGURAÇÃO DO DHPC
 
