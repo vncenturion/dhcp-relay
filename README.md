@@ -77,7 +77,8 @@
 
       ```
          sudo apt-get update
-         sudo apt-get install isc-dhcp-server
+         sudo apt-get install
+         isc-dhcp-server
       ```    
 
 ## CONFIGURAÇÃO DO AGENTE DHCP-RELAY
