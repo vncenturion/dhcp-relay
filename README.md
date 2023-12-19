@@ -75,10 +75,10 @@
 
    10. INSTALANDO ISC-DHCP-SERVER
 
-    ``` shell
+    ```shell
         sudo apt-get update
         sudo apt-get install isc-dhcp-server
-    ```
+        
 
 ## CONFIGURAÇÃO DO AGENTE DHCP-RELAY
 
