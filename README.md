@@ -52,16 +52,36 @@
         VMnet11 (ip estático): 192.168.0.1
 
         VMnet12 (ip estático): 172.16.0.1
-        
+
         VMnet8 (nat) - opcional: escopo automático do VWware Workstation
+
+   8. REGRAS DE IPTABLES
+
+        sudo iptables -A FORWARD -i eth0 -o eth1 -s 192.168.0.0/24 -d 172.16.0.0/16 -j ACCEPT
+
+        sudo iptables -A FORWARD -i eth1 -o eth0 -s 172.16.0.0/16 -d 192.168.0.0/24 -j ACCEPT
+
+        sudo iptables -A INPUT -i eth0 -s 192.168.0.0/24 -j ACCEPT
+
+        sudo iptables -A INPUT -i eth1 -s 172.16.0.0/16 -j ACCEPT
+
+        sudo iptables -t nat -A POSTROUTING -o eth2 -s 192.168.0.0/24 -j MASQUERADE
+
+        sudo iptables -t nat -A POSTROUTING -o eth2 -s 172.16.0.0/16 -j MASQUERADE
+
+        Verificar interfaces do roteador caso necessário.
 
 ## CONFIGURAÇÃO DO DHPC
 
-   7. 
+   10. INSTALANDO ISC-DHCP-SERVER
 
+    ``` shell
+        sudo apt-get update
+        sudo apt-get install isc-dhcp-server
+    ```
 
 ## CONFIGURAÇÃO DO AGENTE DHCP-RELAY
 
-2. DHCP E DHCP-RELAY
+   9. DHCP E DHCP-RELAY
 
 3. 
