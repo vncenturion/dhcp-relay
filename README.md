@@ -29,7 +29,7 @@
 
         MÁQUINA HOST WINDOWS 11, PROCESSADOR 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz   2.30 GHz, MEMÓRIA RAM 16,0 GB (utilizável: 15,9 GB), Sistema operacional de 64 bits, processador baseado em x64. 
 
-   4. **MÃQUINAS VIRTUAIS** 
+   4. **MÁQUINAS VIRTUAIS** 
 
         MÁQUINAS VIRTUAIS COM 2GB RAM E 2 PROCESSADORES PARA SERVIDOR DHCP, HOST E AGENTE DHCP FORAM CRIADOS CLONES DAS MÁQUINAS COM AS MESMAS CONFIGURAÇÕES.
 
@@ -45,8 +45,17 @@
 
         Os parâmetros de cada escopo devem conter faixa de endereços para empréstimos e endereço da interface de rede do roteador padrão da sub-rede.
 
+## CONFIGURAÇÃO DA MV KALI (ATUANDO COMO ROTEADOR)
+
+   7. Network adapters
+
+        VMnet11 (ip estático): 192.168.0.1
+        VMnet12 (ip estático): 172.16.0.1
+        VMnet8 (nat) - opcional: escopo automático do VWware Workstation
+
 ## CONFIGURAÇÃO DO DHPC
 
+   7. 
 
 
 ## CONFIGURAÇÃO DO AGENTE DHCP-RELAY
