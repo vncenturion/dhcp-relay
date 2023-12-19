@@ -22,24 +22,24 @@
 
 ## REQUISITOS DO PROJETO
 
-   1. Sistema hospedeiro
+   3. Sistema hospedeiro
 
         VMWARE WORKSTATION 17.X
         IMAGENS UBUNTU 2023, KALI 2023 E WINDOWS10
 
         MÁQUINA HOST WINDOWS 11, PROCESSADOR 11th Gen Intel(R) Core(TM) i7-11800H @ 2.30GHz   2.30 GHz, MEMÓRIA RAM 16,0 GB (utilizável: 15,9 GB), Sistema operacional de 64 bits, processador baseado em x64. 
 
-   2. Máquinas virtuais 
+   4. Máquinas virtuais 
 
         MÁQUINAS VIRTUAIS COM 2GB RAM E 2 PROCESSADORES PARA SERVIDOR DHCP, HOST E AGENTE DHCP FORAM CRIADOS CLONES DAS MÁQUINAS COM AS MESMAS CONFIGURAÇÕES.
 
 ## CENÁRIO PROPOSTO
 
-   1. TOPOLOGIA
+   5. TOPOLOGIA
 
         Um servidor DHCP conectado a um roteador que conecta duas sub-redes. A primeira sub-rede deverá conter um cliente Linux e o servidor DHCP. A segunda sub-rede conterá apenas um cliente Windows 10.
 
-   2. ESCOPO DHCP
+   6. ESCOPO DHCP
 
         O escopo para a primeira sub-rede terá parâmetros na rede 192.168.0.0/24 e o escopo da segunda sub-rede terá parâmetros na rede 172.16.0.0/16.
 
